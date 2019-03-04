@@ -41,8 +41,13 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-// let navLinks = document.getElementsByTagName('nav');
-// navLink1.setAttribute(textContent, siteContent["nav"]["nav-item-1"])
+let navLinks = document.querySelectorAll("nav a");
+navLinks[0].textContent = siteContent["nav"]["nav-item-1"];
+navLinks[1].textContent = siteContent["nav"]["nav-item-2"];
+navLinks[2].textContent = siteContent["nav"]["nav-item-3"];
+navLinks[3].textContent = siteContent["nav"]["nav-item-4"];
+navLinks[4].textContent = siteContent["nav"]["nav-item-5"];
+navLinks[5].textContent = siteContent["nav"]["nav-item-6"];
 
 let h1 = document.querySelector('h1');
 h1.textContent = siteContent["cta"]["h1"];
@@ -52,3 +57,33 @@ btn.textContent = siteContent["cta"]["button"];
 
 let ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+let topH4 = document.querySelectorAll('.top-content h4');
+topH4[0].textContent = siteContent["main-content"]["features-h4"];
+topH4[1].textContent = siteContent["main-content"]["about-h4"];
+
+let middleImg = document.getElementById("middle-img");
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+let topP = document.querySelectorAll('.top-content p');
+topP[0].textContent = siteContent["main-content"]["features-content"];
+topP[1].textContent = siteContent["main-content"]["about-content"];
+
+let bottomH4 = document.querySelectorAll('.bottom-content h4');
+bottomH4[0].textContent = siteContent["main-content"]["services-h4"];
+bottomH4[1].textContent = siteContent["main-content"]["product-h4"];
+bottomH4[2].textContent = siteContent["main-content"]["vision-h4"];
+
+let bottomP = document.querySelectorAll('.bottom-content p');
+bottomP[0].textContent = siteContent["main-content"]["services-content"];
+bottomP[1].textContent = siteContent["main-content"]["product-content"];
+bottomP[2].textContent = siteContent["main-content"]["vision-content"];
+
+
+// h4.forEach( function (x) {
+//   x.textContent = siteContent["main-content"]["features-h4"]
+//   x.textContent = siteContent["main-content"]["about-h4"]
+//   x.textContent = siteContent["main-content"]["services-h4"]
+//   x.textContent = siteContent["main-content"]["product-h4"]
+//   x.textContent = siteContent["main-content"]["vision-h4"]
+// });
