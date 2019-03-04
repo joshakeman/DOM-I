@@ -71,7 +71,8 @@ let h1 = document.querySelector('h1');
 h1.textContent = siteContent["cta"]["h1"];
 
 let btn = document.querySelector('button');
-btn.textContent = siteContent["cta"]["button"];
+// btn.textContent = siteContent["cta"]["button"];
+btn.textContent = "Blow up this site";
 
 let ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
@@ -122,3 +123,25 @@ footerP[0].textContent = siteContent["footer"]["copyright"];
 //   x.textContent = siteContent["main-content"]["product-h4"]
 //   x.textContent = siteContent["main-content"]["vision-h4"]
 // });
+
+
+//Events
+
+let containerDiv = document.querySelector('.container');
+
+function myFunction() {
+  // let containerDiv = document.querySelector("body");
+  containerDiv.remove()
+  const atomicBomb = document.createElement('img');
+  atomicBomb.setAttribute('src', 'https://3dsgm810md7fr0s6s2luyaf1-wpengine.netdna-ssl.com/wp-content/uploads/2017/05/0ac43fecac55ec6c6e9e5d3de0f270c1_image-result-for-atom-bomb-explosion-nuclear-warfare-pinterest-cartoon-atomic-bomb-explosion_2560-1600.jpeg');
+  document.querySelector('body').append(atomicBomb);
+}
+
+// function myFunction() {
+//   // let containerDiv = document.querySelector("body");
+//   navLinks.forEach( currentValue => currentValue.style.color = "blue");
+// }
+
+// btn.addEventListener("click", myFunction);
+
+btn.addEventListener("click", myFunction);
