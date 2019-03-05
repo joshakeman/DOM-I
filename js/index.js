@@ -115,16 +115,6 @@ contactP[2].textContent = siteContent["contact"]["email"];
 let footerP = document.querySelectorAll('footer p');
 footerP[0].textContent = siteContent["footer"]["copyright"];
 
-
-// h4.forEach( function (x) {
-//   x.textContent = siteContent["main-content"]["features-h4"]
-//   x.textContent = siteContent["main-content"]["about-h4"]
-//   x.textContent = siteContent["main-content"]["services-h4"]
-//   x.textContent = siteContent["main-content"]["product-h4"]
-//   x.textContent = siteContent["main-content"]["vision-h4"]
-// });
-
-
 //Events
 
 let containerDiv = document.querySelector('.container');
